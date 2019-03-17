@@ -66,6 +66,7 @@ public class Application implements CommandLineRunner {
 		searchByFirstOrLastName("Lydia", "Sei");
 		
 		// Page and Sort
+		@SuppressWarnings("deprecation")
 		List<Person> personList = personServiceImpl.findByLastName("Lydia", new PageRequest(0, 4, Direction.ASC, "firstName"));
 		personList.forEach(System.out::println);
 		
