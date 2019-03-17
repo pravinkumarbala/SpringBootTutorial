@@ -1,6 +1,9 @@
 package com.app.service;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+import org.springframework.data.domain.PageRequest;
 
 import com.app.dao.Person;
 
@@ -12,4 +15,13 @@ public interface PersonService {
 	public void updatePersonEntity(Person updPerson);
 	
 	public List<Person> getPersonInfoByLastName(String lastName);
+	public List<Person> getPersonByFirstNameAndEmail(String name, String email);
+	
+	public List<Person> findByLastName(String string, PageRequest pageRequest);
+	
+	public CompletableFuture<Person> getByEmaiAddr(String emailAddr);
+	
+	public List<Person> searchByFirstOrLastName(String lastName, String firstName);
+	
+	public void updatePersonEmailAddr(int id, String emailAddr);
 }

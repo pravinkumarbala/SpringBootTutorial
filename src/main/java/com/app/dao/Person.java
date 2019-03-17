@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicUpdate;
@@ -18,31 +16,39 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Entity
 @Table(name = "Person")
 @DynamicUpdate
+/*
 @NamedQueries(value = {
 		@NamedQuery(name = "Person.getPersonInfoByLastName", query = "SELECT p from Person p WHERE p.lastName = ?1"),
-		@NamedQuery(name = "Person.getPersonByFirstNameAndEmailAddr", query = "SELECT p from Person p WHERE p.firstName = ?1 AND p.emailAddr = ?2")
-})
+		@NamedQuery(name = "Person.getPersonByFirstNameAndEmailAddr", query = "SELECT p from Person p WHERE p.firstName = ?1 AND p.emailAddr = ?2") 
+		})
+
+@NamedNativeQueries({
+		@NamedNativeQuery(name = "Person.getPersonInfoByLastName", query = "SELECT * from person WHERE last_Name = ?1", resultClass = Person.class),
+		@NamedNativeQuery(name = "Person.getPersonByFirstNameAndEmailAddr", query = "SELECT * from person WHERE First_Name = ?1 AND Eamil_Addr = ?2", resultClass = Person.class) 
+		})
+*/
 public class Person {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "Person_Id")
 	private int personId;
-	
-	@Column(name = "First_Name", length = 60, nullable = false)
+
+	@Column(name = "First_Name", length = 60)
 	private String firstName;
-	
-	@Column(name = "Last_Name", length = 60, nullable = false)
+
+	@Column(name = "Last_Name", length = 60)
 	private String lastName;
-	
-	@Column(name = "Email_Address", unique = true)
+
+	@Column(name = "Email_Addr", unique = true)
 	private String emailAddr;
-	
+
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	@Column(name = "Creation_Date")
 	private Date creationDate;
-	
-	public Person() { }
+
+	public Person() {
+	}
 
 	public Person(String firstName, String lastName, String emailAddr, Date creationDate) {
 		super();
@@ -97,5 +103,5 @@ public class Person {
 		return "Person [personId=" + personId + ", firstName=" + firstName + ", lastName=" + lastName + ", emailAddr="
 				+ emailAddr + ", creationDate=" + creationDate + "]";
 	}
-	
+
 }
