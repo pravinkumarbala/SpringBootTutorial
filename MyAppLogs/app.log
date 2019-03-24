@@ -1,0 +1,87 @@
+2019-03-24 19:21:19.941  INFO 11356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-24 19:21:20.126  INFO 11356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 2 repository interfaces.
+2019-03-24 19:21:21.090  INFO 11356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f1663cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 19:21:21.410  INFO 11356 --- [main] org.eclipse.jetty.util.log               : Logging initialized @4768ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-24 19:21:21.606  INFO 11356 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9090
+2019-03-24 19:21:21.614  INFO 11356 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_201-b09
+2019-03-24 19:21:21.686  INFO 11356 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2019-03-24 19:21:21.686  INFO 11356 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3041 ms
+2019-03-24 19:21:22.210  INFO 11356 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2019-03-24 19:21:22.210  INFO 11356 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2019-03-24 19:21:22.213  INFO 11356 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2019-03-24 19:21:22.221  INFO 11356 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@151ef57f{application,/,[file:///C:/Users/mprakasa/AppData/Local/Temp/jetty-docbase.3570499858536295530.9090/],AVAILABLE}
+2019-03-24 19:21:22.221  INFO 11356 --- [main] org.eclipse.jetty.server.Server          : Started @5580ms
+2019-03-24 19:21:22.397  INFO 11356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-24 19:21:22.517  INFO 11356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-24 19:21:22.757  INFO 11356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-24 19:21:22.905  INFO 11356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-24 19:21:22.905  INFO 11356 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-24 19:21:23.105  INFO 11356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-24 19:21:23.281  INFO 11356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-24 19:21:24.110  INFO 11356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-24 19:21:24.622  INFO 11356 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-24 19:21:25.035  INFO 11356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-24 19:21:25.095  WARN 11356 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-24 19:21:25.983  INFO 11356 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d37aa0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cbe95b1, org.springframework.security.web.header.HeaderWriterFilter@1de85972, org.springframework.security.web.csrf.CsrfFilter@2807cf3, org.springframework.security.web.authentication.logout.LogoutFilter@4bf8b77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c94bd18, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d537616, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6076c66, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c4057f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a82bc58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11ad095c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@485c84d7, org.springframework.security.web.session.SessionManagementFilter@57b1ec84, org.springframework.security.web.access.ExceptionTranslationFilter@2c2a7d53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b0d3e7]
+2019-03-24 19:21:26.293  INFO 11356 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9191
+2019-03-24 19:21:26.293  INFO 11356 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_201-b09
+2019-03-24 19:21:26.297  INFO 11356 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2019-03-24 19:21:26.297  INFO 11356 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 152 ms
+2019-03-24 19:21:26.313  INFO 11356 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2019-03-24 19:21:26.317  INFO 11356 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2019-03-24 19:21:26.317  INFO 11356 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2019-03-24 19:21:26.317  INFO 11356 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1c0e4262{application,/,[file:///C:/Users/mprakasa/AppData/Local/Temp/jetty-docbase.8631379184199202762.9191/],AVAILABLE}
+2019-03-24 19:21:26.317  INFO 11356 --- [main] org.eclipse.jetty.server.Server          : Started @9674ms
+2019-03-24 19:21:26.329  INFO 11356 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-24 19:21:26.433  INFO 11356 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-24 19:21:26.433  INFO 11356 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-24 19:21:26.445  INFO 11356 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-03-24 19:21:26.509  INFO 11356 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@58bad46f{HTTP/1.1,[http/1.1]}{0.0.0.0:9191}
+2019-03-24 19:21:26.517  INFO 11356 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 9191 (http/1.1) with context path '/'
+2019-03-24 19:21:26.545  INFO 11356 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-24 19:21:26.545  INFO 11356 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-24 19:21:26.549  INFO 11356 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-03-24 19:21:26.557  INFO 11356 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@3c4059a{HTTP/1.1,[http/1.1]}{0.0.0.0:9090}
+2019-03-24 19:21:26.557  INFO 11356 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 9090 (http/1.1) with context path '/'
+2019-03-24 19:34:51.027  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-03-24 19:34:51.044  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@58bad46f{HTTP/1.1,[http/1.1]}{0.0.0.0:9191}
+2019-03-24 19:34:51.045  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2019-03-24 19:34:51.048  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-03-24 19:34:51.050  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@1c0e4262{application,/,[file:///C:/Users/mprakasa/AppData/Local/Temp/jetty-docbase.8631379184199202762.9191/],UNAVAILABLE}
+2019-03-24 19:34:51.058  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-24 19:34:51.059  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-24 19:34:51.068  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-24 19:34:51.074  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-24 19:34:51.081  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@3c4059a{HTTP/1.1,[http/1.1]}{0.0.0.0:9090}
+2019-03-24 19:34:51.082  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2019-03-24 19:34:51.085  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-03-24 19:34:51.086  INFO 11356 --- [RMI TCP Connection(23)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@151ef57f{application,/,[file:///C:/Users/mprakasa/AppData/Local/Temp/jetty-docbase.3570499858536295530.9090/],UNAVAILABLE}
+2019-03-24 19:34:56.261  INFO 8624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-24 19:34:56.407  INFO 8624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 2 repository interfaces.
+2019-03-24 19:34:57.024  INFO 8624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bbb3678] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 19:34:57.361  WARN 8624 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-03-24 19:34:57.397  INFO 8624 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-03-24 19:34:57.397  INFO 8624 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2438 ms
+2019-03-24 19:34:57.904  INFO 8624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-24 19:34:58.092  INFO 8624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-24 19:34:58.163  INFO 8624 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-24 19:34:58.374  INFO 8624 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-24 19:34:58.377  INFO 8624 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-24 19:34:58.585  INFO 8624 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-24 19:34:58.780  INFO 8624 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-24 19:34:59.717  INFO 8624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-24 19:35:00.249  INFO 8624 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-24 19:35:00.759  INFO 8624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-24 19:35:00.812  WARN 8624 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-24 19:35:01.663  INFO 8624 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@213835b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@77ff14ce, org.springframework.security.web.header.HeaderWriterFilter@36238b12, org.springframework.security.web.csrf.CsrfFilter@3eb9c575, org.springframework.security.web.authentication.logout.LogoutFilter@45707f76, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@740c4868, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@491893f8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24a3d414, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fc1c7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a8d676e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58e02359, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37e55819, org.springframework.security.web.session.SessionManagementFilter@41938e1e, org.springframework.security.web.access.ExceptionTranslationFilter@41167ded, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ca22e19]
+2019-03-24 19:35:01.940  INFO 8624 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-03-24 19:35:01.941  INFO 8624 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 137 ms
+2019-03-24 19:35:01.976  INFO 8624 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-24 19:35:02.079  INFO 8624 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-03-24 19:35:02.096  INFO 8624 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-03-24 19:35:02.193  INFO 8624 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9191 (http) with context path ''
+2019-03-24 19:35:02.228  INFO 8624 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9090 (http) with context path ''
